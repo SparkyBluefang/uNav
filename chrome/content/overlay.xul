@@ -24,7 +24,7 @@
 		<toolbarbutton
 			id="micronav-reload-button"
 			class="toolbarbutton-1 chromeclass-toolbar-additional"
-			label="Reload"
+			label="&reloadCmd.label;"
 			removable="false"
 			command="Browser:ReloadOrDuplicate"
 			onclick="checkForMiddleClick(this, event);"
@@ -33,7 +33,7 @@
 		<toolbarbutton
 			id="micronav-stop-button"
 			class="toolbarbutton-1 chromeclass-toolbar-additional"
-			label="Stop"
+			label="&stopCmd.label;"
 			removable="false"
 			command="Browser:Stop"
 			oncommand="BrowserStop();"
