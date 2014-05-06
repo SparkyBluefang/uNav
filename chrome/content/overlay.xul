@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE overlay SYSTEM "chrome://browser/locale/browser.dtd">
+
+<!--
+   - ***** BEGIN LICENSE BLOCK *****
+   - 
+   - This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/.
+   - 
+   - Copyright (C) 2014 Matthew Turnbull <sparky@bluefang-logic.com>. All Rights Reserved.
+   - 
+   - ***** END LICENSE BLOCK *****
+-->
+
+<?xml-stylesheet href="chrome://micronav/skin/style.css" type="text/css" ?>
+
+<overlay id="micronav-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<script type="application/javascript" src="chrome://micronav/content/overlay.js" />
+
+	<toolbaritem id="urlbar-container">
+		<toolbarbutton
+			id="micronav-reload-button"
+			class="toolbarbutton-1 chromeclass-toolbar-additional"
+			label="Reload"
+			removable="false"
+			command="Browser:ReloadOrDuplicate"
+			onclick="checkForMiddleClick(this, event);"
+			oncommand="BrowserReloadOrDuplicate(event);"
+			tooltiptext="&reloadButton.tooltip;"/>
+		<toolbarbutton
+			id="micronav-stop-button"
+			class="toolbarbutton-1 chromeclass-toolbar-additional"
+			label="Stop"
+			removable="false"
+			command="Browser:Stop"
+			oncommand="BrowserStop();"
+			tooltiptext="&stopButton.tooltip;"/>
+	</toolbaritem>
+</overlay>

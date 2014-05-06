@@ -1,0 +1,77 @@
+/*
+ * ***** BEGIN LICENSE BLOCK *****
+ * 
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ * 
+ * Copyright (C) 2014 Matthew Turnbull <sparky@bluefang-logic.com>. All Rights Reserved.
+ * 
+ * ***** END LICENSE BLOCK *****
+*/
+
+#micronav-reload-button,
+#micronav-stop-button
+{
+	list-style-image: url("chrome://browser/skin/Toolbar.png");
+	padding: 0;
+}
+
+#micronav-reload-button
+{
+	-moz-image-region: rect(0px, 90px, 18px, 72px);
+}
+
+#micronav-stop-button
+{
+	-moz-image-region: rect(0px, 108px, 18px, 90px);
+}
+
+#micronav-reload-button > .toolbarbutton-icon,
+#micronav-stop-button > .toolbarbutton-icon
+{
+	background-clip: padding-box;
+	padding: 2px 4px;
+	border: 1px solid #9a9a9a;
+	border-radius: 0;
+}
+
+#forward-button
+{
+	margin-left: 0 !important;
+}
+
+#forward-button[disabled] + #urlbar > #notification-popup-box
+{
+	padding-left: 3px !important;
+}
+
+#forward-button[disabled] + #urlbar > #notification-popup-box[hidden] + #identity-box
+{
+	padding-left: 1px !important;
+}
+
+#forward-button[disabled] > .toolbarbutton-icon
+{
+	border-right-style: none;
+}
+
+#forward-button:not([disabled]) + #micronav-reload-button > .toolbarbutton-icon,
+#forward-button:not([disabled]) ~ #micronav-stop-button > .toolbarbutton-icon
+{
+	border-left-style: none;
+}
+
+#micronav-reload-button:not([displaystop]) + #micronav-stop-button,
+#micronav-reload-button[displaystop]
+{
+	visibility: collapse;
+}
+
+#urlbar-reload-button,
+#urlbar-stop-button,
+#urlbar-go-button
+{
+	visibility: collapse;
+}
+

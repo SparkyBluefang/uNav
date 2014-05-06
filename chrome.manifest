@@ -1,0 +1,19 @@
+# ***** BEGIN LICENSE BLOCK *****
+# 
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# 
+# Copyright (C) 2014 Matthew Turnbull <sparky@bluefang-logic.com>. All Rights Reserved.
+# 
+# ***** END LICENSE BLOCK *****
+
+# Paths
+content micronav chrome/content/
+
+# Skin
+skin micronav classic/1.0 chrome/skin/
+
+# Overlays
+overlay chrome://browser/content/browser.xul chrome://micronav/content/overlay.xul
+
